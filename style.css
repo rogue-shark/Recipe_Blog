@@ -7,13 +7,13 @@
     --bgc-bullet: #F2994A;
     --font-main: 'Montserrat', sans-serif;
     --font-head: 'IBM Plex Serif', serif;
-    --bgc-checkbox: #d5465c;
+    --bgc-checkbox: #760c1c;
 }
 body{
    margin: 0;
    padding: 0;
    font-family: var(--font-main);
- 
+   background-color: cornsilk;
 }
 
 h1{
@@ -30,6 +30,7 @@ h1{
 
 img{
     max-width: 100%;
+    box-shadow: 0px 0px 20px var(--bgc-bullet);
 }
 
 input[type='checkbox'] {
@@ -56,7 +57,7 @@ label,p{
     body{
         font-size: 1.25rem;
     }
-    
+
     .section-1 p,
     .section-2-content,
     .section-3{
@@ -75,9 +76,11 @@ label,p{
         justify-content: center;
         padding: 0 2em;
         height: 50vh;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 20px var(--bgc-bullet);
         border-radius: 12px;
-        background-color: white;
+        background-color: var(--bgc-checkbox);
+        color: white;
+        font-weight: bold;
     }
     .sidebar p{
         margin: 0;
