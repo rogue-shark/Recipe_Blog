@@ -57,7 +57,10 @@ label,p{
     body{
         font-size: 1.25rem;
     }
-
+    
+    .container{
+        width: 80%;
+    }
     .section-1 p,
     .section-2-content,
     .section-3{
