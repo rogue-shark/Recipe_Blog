@@ -18,7 +18,7 @@ body{
 
 h1{
     font-family: var(--font-head);
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 3.5rem;
 }
 
@@ -29,6 +29,7 @@ h1{
 }
 
 img{
+    margin: 1em 0;
     max-width: 100%;
     box-shadow: 0px 0px 20px var(--bgc-bullet);
 }
@@ -52,6 +53,41 @@ label,p{
 .sidebar{
     display: none;
 }
+
+/* ---------------------------Instructions--------------------------------- */
+.section-3 div{
+    width: 80%;
+    position: relative;
+}
+ol {
+    
+    list-style: none;
+    counter-reset: item;
+  }
+  li {
+    counter-increment: item;
+    margin: 0 0 2em 1em;
+  }
+  li:before {
+    margin-right: 3em;
+    content: counter(item);
+    background: var(--bgc-bullet);
+    border-radius: 100%;
+    color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+ p{
+   display: inline;
+   
+ }
 
 @media (min-width:700px) {
     body{
